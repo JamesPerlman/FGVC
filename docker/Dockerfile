@@ -20,7 +20,6 @@ ENV PATH=${PATH}:/opt/conda/bin
 
 RUN apt-get update && \
     apt-get install -y \
-        ffmpeg \
         git \
         libsm6 \
         libxext6 \
@@ -46,7 +45,9 @@ RUN conda install -y \
         cudatoolkit=10.1 \
         matplotlib \
         scipy \
-        opencv
+        opencv \
+        x264 \
+        ffmpeg
 
 # install pip dependencies
 
